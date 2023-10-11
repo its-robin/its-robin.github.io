@@ -3,60 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Materialize - Compiled and minified CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <!-- Font Awesome Icon - CSS-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /> 
     <link rel="stylesheet" href="styles.css">
     <title>Robin's Portfolio</title>
 </head>
 <body>
-    <div class="container">
         <nav class="navigation">
-            <img src="profile-pic.jpg" alt="Robin's Profile Picture">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills/Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul  class="side-nav fixed section table-of-contents">
+                <li class="logo">
+                    <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
+          class="brand-logo grey-blue-text">
+                    <img  class="circle img-responsive profile-pic" src="profile-pic.jpg" alt="Robin's Profile Picture"></a></li>
+                    <li class="bold">
+                        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+                            class="mdi-social-person small"></i><span>About</span></a>
+                      </li>
+                      <li class="bold">
+                        <a aria-label="Navigate to the Experience section" href="#experience"
+                          class="waves-effect waves-dark teal-text"><i
+                            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+                      </li>
+                      <li class="bold">
+   
+                        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+                            class="mdi-action-assessment small"></i><span>Skills</span></a>
+                      </li>
+                      <li class="bold">
+ 
+                        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+                            class="mdi-content-mail small"></i><span>Contact</span></a>
+                      </li>
             </ul>
-        </nav>        
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>           
-            <p>About Me: [Your introduction goes here]</p>
-        </section>
-        <section id="skills">
-            <h2>Skills & Experience</h2>
-            <ul>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <!-- Add more skills and experience here -->
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>You can reach me on:</p>
-            <ul>
-                <li><a href="[LinkedIn Link]" target="_blank">LinkedIn</a></li>
-                <li><a href="[GitHub Link]" target="_blank">GitHub</a></li>
-            </ul>
-        </section>
-    </div>
-    <script src="script.js"></script>
+        </nav>    
+        <main>    
+        <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="col-md-9">
+                <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+                    <div class="caption">
+                        <h2>Hi, I'm <span class="teal">Robin Khera.</span></h2>
+                        <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/robin-khera/" target="_blank">
+                            <button class="icon-btn linkedin">
+                              <i class="fa fa-linkedin"></i>
+                            </button>
+                          </a>
+                          <a href="https://github.com/its-robin/" target="_blank">
+                            <button class="icon-btn github">
+                              <i class="fa fa-github"></i>
+                            </button>
+                          </a>
+            
+                    </div>
+                    <div class="buttons">
+                        <a href="#about" class="readme">Read More</a>
+                        <a href="#contact" class="contactme">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+       <!-- Second Section: About -->
+       <section id="about" class="section scrollspy">
+        <h3 class="page-title white-text teal">About</h3>
+        <div class="container flow-text">
+            <p>
+                I am a seasoned <b>Software Development Manager at Vartopia</b>, a renowned provider of channel management solutions for the tech industry. With over 16 years of expertise in the software realm, my journey transcends the boundaries of tools and skills. I possess a wide-ranging and diverse background in crafting web applications and products. My experience isn't limited to specific technologies, it's a dynamic tapestry that includes:
+              </p>
+              <p>
+                <ul>
+                  <li><b>Architecting Excellence:</b> I have a proven track record in architecting innovative and high-impact web applications. From conceptualization to implementation, I've been at the helm of projects that have pushed the boundaries of what's possible in the digital landscape</li>
+                  <li><b>Mentoring Future Innovators:</b> In my role, I have nurtured and mentored a new generation of software engineers. Sharing knowledge, instilling best practices, and fostering creativity is a cornerstone of my career. I take pride in seeing those I've guided making their mark in the tech world.</li>
+                  <li><b>Hands-On Expertise:</b> While I guide and lead, I still thrive on hands-on coding. My commitment to practicing what I preach keeps me in tune with the ever-evolving tech landscape.</li>
+                  <li><b>AI and Latest Tech Stacks:</b> My thirst for knowledge doesn't wane. I'm constantly upskilling myself, delving into the realms of AI, and staying abreast of the latest tech stacks, including the versatile MERN (MongoDB, Express.js, React, Node.js) stack</li>
+                </ul>                
+              </p>
+              <!-- <p>
+                My goal is to deliver not just software but transformative solutions, and my passion lies in addressing real-world challenges that impact millions of users. If you're seeking a dynamic leader who's both a visionary architect and a hands-on tech enthusiast, I'm the ideal fit.                
+              </p> -->
+        </div>
+       </section>
+
+       <section id="experience" class="section scrollspy">
+        <h3 class="page-title white-text teal">Experience</h3>
+        <div class="container">
+             <!-- Latest Experience -->
+        <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2">
+                  <a href="https://www.vartopia.com/" target="_blank"><img alt="Vartopia logo"
+                      src="vartopia-logo.png" class="responsive-img center-block" /></a>
+                </div>
+                <!-- <div class="col s12 m10"> -->
+                <div class="col s12 m10">
+                  <p>
+                    <span class="card-title"><a href="https://www.vartopia.com/" target="_blank"
+                        class="teal-text hoverline">Vartopia</a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="role brown-text text-darken-2">Software Development Manager</div>
+              <ul>
+                <li>
+                  Managing the Development Team and involved in Development of New Products from Planning to implemenation phases using AGILE frameworks
+                </li>
+                <li>
+                  
+                </li>
+                
+                <li>
+                  
+                </li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <span>Dec 2017 - Present | Mohali, India</span>
+            </div>
+          </div>
+        </div>
+       </section>
+        </main>
+      <!-- jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+  <!-- Materialize - Compiled and minified JavaScript-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $(".scrollspy").scrollSpy()
+      // Initialize collapse button
+      $(".button-collapse").sideNav({
+        menuWidth: 190, // Default is 240
+        edge: "left", // Choose the horizontal origin
+        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      })
+    })
+  </script>
 </body>
 </html>
