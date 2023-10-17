@@ -7,16 +7,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /> 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/style/styles.css">
     <title>Robin's Portfolio</title>
 </head>
 <body>
-        <nav class="navigation">
+        <nav class="hide-on-small-only">
             <ul  class="side-nav fixed section table-of-contents">
                 <li class="logo">
                     <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
           class="brand-logo grey-blue-text">
-                    <img  class="circle img-responsive profile-pic" src="profile-pic.jpg" alt="Robin's Profile Picture"></a></li>
+                    <img  class="circle img-responsive profile-pic" src="assets/img/profile-pic.JPG" alt="Robin's Profile Picture"></a></li>
                     <li class="bold">
                         <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
                             class="mdi-social-person small"></i><span>About</span></a>
@@ -38,6 +38,38 @@
                       </li>
             </ul>
         </nav>    
+          <!-- Nav class 2 -->
+  <nav class="hide-on-large only trigger z-depth-1">
+    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
+      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    <div class="name-title">
+      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Robin
+        Khera </a><span class="black-text">Software Engineering Manager</span>
+    </div>
+  </nav>
+  <nav class="hide-on-large only">
+    <ul id="slide-out" class="side-nav">
+      <li class="bold">
+        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+      </li>
+      <li class="bold">
+        <a aria-label="Navigate to the Experience section" href="#experience"
+          class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+      </li>
+      <li class="bold">
+
+        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+      </li>
+      <li class="bold">
+
+        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+      </li>
+    </ul>
+  </nav>
         <main>    
         <!-- First Section: Heading lines and image -->
     <section id="intro" class="section scrollspy full-height">
@@ -47,9 +79,14 @@
                 <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
                     <div class="caption">
                         <h2>Hi, I'm <span class="teal">Robin Khera.</span></h2>
-                        <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+                        <h5 style="color:#fff">
+                          <span
+                             class="txt-rotate"
+                             data-period="2000"
+                             data-rotate='["Innovative Problem Solver.","Software Architect.", "AI Enthusiast!", "Tech Mentor.", "Web Developer."]'></span>
+                        </h5>
               <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
+              <h5>Dedicated, proactive tech leader, passionate about solving complex issues, fostering talent, and staying at the forefront of innovative technologies.</h5>
                     </div>
                     <div class="social">
                         <a href="https://www.linkedin.com/in/robin-khera/" target="_blank">
@@ -87,9 +124,6 @@
                   <li><b>AI and Latest Tech Stacks:</b> My thirst for knowledge doesn't wane. I'm constantly upskilling myself, delving into the realms of AI, and staying abreast of the latest tech stacks, including the versatile MERN (MongoDB, Express.js, React, Node.js) stack</li>
                 </ul>                
               </p>
-              <!-- <p>
-                My goal is to deliver not just software but transformative solutions, and my passion lies in addressing real-world challenges that impact millions of users. If you're seeking a dynamic leader who's both a visionary architect and a hands-on tech enthusiast, I'm the ideal fit.                
-              </p> -->
         </div>
        </section>
 
@@ -101,8 +135,7 @@
             <div class="card-content">
               <div class="row">
                 <div class="col s12 m2">
-                  <a href="https://www.vartopia.com/" target="_blank"><img alt="Vartopia logo"
-                      src="vartopia-logo.png" class="responsive-img center-block" /></a>
+            
                 </div>
                 <!-- <div class="col s12 m10"> -->
                 <div class="col s12 m10">
@@ -115,14 +148,19 @@
               <div class="role brown-text text-darken-2">Software Development Manager</div>
               <ul>
                 <li>
-                  Managing the Development Team and involved in Development of New Products from Planning to implemenation phases using AGILE frameworks
+                  Started working as a Senior Dotnet Developer. Implemented Industry Standard Products such as OKTA SSO and learned frameworks such as SAML 2.0 
                 </li>
                 <li>
-                  
+                  Got Promoted to Software Development Manager to lead the complete Development and QA teams & now managing a team close to 20+ employees
                 </li>
-                
+                 <li>
+                  Responsible for Hiring and Team building
+                </li>
                 <li>
-                  
+                  Identifying gaps in Software Development and working closely with QA Team to ensure to achieve the right Product version.
+                </li>
+                <li>
+                  Product Release Management and Deployment
                 </li>
               </ul>
             </div>
@@ -130,8 +168,199 @@
               <span>Dec 2017 - Present | Mohali, India</span>
             </div>
           </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2">
+                </div>
+                <!-- <div class="col s12 m10"> -->
+                <div class="col s12 m10">
+                  <p>
+                    <span class="card-title"><a href="https://www.appmobi.com/" target="_blank"
+                        class="teal-text hoverline">Appmobi IT Services Pvt Ltd</a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="role brown-text text-darken-2">Associate Team Lead (.NET)</div>
+              <ul>
+                <li>
+                  Gathering requirements from Client for the assigned modules and tasks and updating on any issues on regular basis 
+                </li>
+                <li>
+                  Database scripting to develop complex functionalities like SQL server replication (2012). 
+                </li>
+                 <li>
+                  Writing, updating end user documentation and operational procedures. 
+                </li>
+                <li>
+                  Working with AWS & Deploying Application to AWS instances.
+                </li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <span>May 2013 - Nov 2017 | Mohali, India</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2">
+                </div>
+                <!-- <div class="col s12 m10"> -->
+                <div class="col s12 m10">
+                  <p>
+                    <span class="card-title"><a href="https://www.safaltek.in/" target="_blank"
+                        class="teal-text hoverline">Safaltek Software Pvt Ltd</a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="role brown-text text-darken-2">Software Team Lead</div>
+              <ul>
+                <li>
+                  Started as a Software Developer and worked on various projects and eventually got promotoed to Team Lead
+                </li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <span>Feb 2008 - Apr 2013 | Chandigarh, India</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="row">
+                <div class="col s12 m2">
+                </div>
+                <!-- <div class="col s12 m10"> -->
+                <div class="col s12 m10">
+                  <p>
+                    <span class="card-title"><a href="https://www.softprodigy.in/" target="_blank"
+                        class="teal-text hoverline">SoftProdigy</a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="role brown-text text-darken-2">Software Developer</div>
+              <ul>
+                <li>
+                Worked on various Inhouse projects and building Outlook Extensions.
+
+                </li>
+              </ul>
+            </div>
+            <div class="card-action">
+              <span>Apr 2007 - Feb 2008 | Mohali, India</span>
+            </div>
+          </div>
         </div>
        </section>
+         <!-- 3rd Section: Skills -->
+    <section id="skills" class="section scrollspy">
+      <h3 class="page-title white-text teal">Skills</h3>
+      <div class="container">
+        <!-- Languages and Databases -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Languages and Technologies</h4>
+            <div class="row text-center">
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/aspnet.png" class="responsive-img" />C#
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/javascript.png" class="responsive-img" />JavaScript
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/aspnet.png" class="responsive-img" />ASP.NET
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/web-api-icon.png" class="responsive-img" />Web APIs
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/sql.png" class="responsive-img" />SQL
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/json.jpg" class="responsive-img" />JSON
+              </div>
+          
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Databases & Frameworks</h4>
+            <div class="row text-center">
+
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/sqlserver1.png" class="responsive-img" />SQL Server
+              </div>    
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/saml-1.svg" class="responsive-img" />SAML 2.0
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/netframework.png" class="responsive-img" />.NET Framework
+              </div>
+            
+             
+            </div>
+          </div>
+        </div>
+
+        <!-- Other -->
+        <div class="card">
+          <div class="card-content">
+            <h4 class="brown-text light">Other</h4>
+            <div class="row text-center">
+
+
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/git.png" class="responsive-img" />Git
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/okta.png" class="responsive-img" />OKTA
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/aws.png" class="responsive-img" />AWS
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="assets/img/jira.png" class="responsive-img" />JIRA
+              </div>
+              <div class="col s4 m2">
+                <img alt="" src="" class="responsive-img" />Smartsheet
+              </div>
+            </div>
+          </div>
+        </div>
+
+ 
+      </div>
+    </section>
+   <!-- Fourth Section: Contact -->
+    <section id="contact" class="section scrollspy full-height">
+      <h3 class="page-title white-text teal">Contact</h3>
+      <div class="container">
+
+        <p>
+          <a aria-label="Email Robin" href="mailto:robinkhera@gmail.com" target="_blank" data-position="top"
+            data-tooltip="Email Robin" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-envelope"></i><a aria-label="Email Robin" href="mailto:robinkhera@gmail.com"
+              class="hoverline">robinkhera@gmail.com</a></a>
+        </p>
+        <p>
+          <a aria-label="View Robin on GitHub" href="https://github.com/its-robin" target="_blank"
+            data-position="top" data-tooltip="View Robin on GitHub"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i><a
+              aria-label="Robin on Github" href="http://github.com/its-robin" class="hoverline"
+              target="_blank">github.com/its-robin</a></a>
+        </p>
+        <p>
+          <a aria-label="View Robin on LinkedIn" href="https://www.linkedin.com/in/robin-khera/" target="_blank"
+            data-position="top" data-tooltip="View Robin on LinkedIn"
+            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+              class="fa fa-linkedin"></i><a aria-label="Robin on LinkedIn" href="https://www.linkedin.com/in/robin-khera/"
+              class="hoverline" target="_blank">linkedin.com/in/robin-khera/</a></a>
+        </p>
+      </div>
+    </section>
         </main>
       <!-- jQuery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -150,5 +379,7 @@
       })
     })
   </script>
+  <script src="assets/scripts/script.js"></script>
+  
 </body>
 </html>
